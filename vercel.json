@@ -1,8 +1,9 @@
 {
   "rewrites": [
+    { "source": "/", "destination": "https://cdn.discordapp.com" },
     {
-      "source": "/discord/(.*)",
-      "destination": "/api/proxy"
+      "source": "/:match*",
+      "destination": "https://cdn.discordapp.com/:match*"
     }
   ]
 }
